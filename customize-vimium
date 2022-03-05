@@ -2,32 +2,95 @@
 unmap d
 unmap u
 unmap t
+unmap j
+unmap k
+unmap h
+unmap l
+unmap H
+unmap L
+unmap r
+unmap ge
+unmap gE
+unmap b
+unmap B
+unmap T
+unmap gu
+unmap gU
+unmap gf
+unmap gF
+unmap J
+unmap K
+unmap ^
+unmap g0
+unmap g$
+unmap <<
+unmap >>
+unmap x
+unmap X
+unmap W
 
+map <c-y> scrollUp
+map <c-e> scrollDown
 map <c-u> scrollPageUp
 map <c-d> scrollPageDown
-map <c-f> scrollFullPageDown
 map <c-b> scrollFullPageUp
+map <c-f> scrollFullPageDown
 
-map u goBack
-map <c-r> goForward
+map gg scrollToTop
+map G scrollToBottom
+
+map zh scrollLeft
+map zl scrollRight
+map zH scrollToLeft
+map zL scrollToRight
+
+map <c-o> goBack
+map <c-i> goForward
 map <c-l> reload
 
-map to closeOtherTabs
-map te createTab
-map tc removeTab
-map q removeTab
-map Q restoreTab
-map tlc closeTabsOnLeft
-map trc closeTabsOnRight
-map 1 firstTab
-map tl lastTab
-map $ lastTab
-map g<tab> visitPreviousTab
-map # visitPreviousTab
-map tw moveTabToNewWindow
+map yy copyCurrentUrl
+map p openCopiedUrlInCurrentTab
+map P openCopiedUrlInNewTab
 
+map i enterInsertMode
+map v enterVisualMode
+map V enterVisualLineMode
+
+map gi focusInput
+map f LinkHints.activateMode
+map F LinkHints.activateModeToOpenInNewTab
+map s LinkHints.activateModeToOpenInNewForegroundTab
+
+" map <a-f> LinkHints.activateModeWithQueue
+
+map yf LinkHints.activateModeToCopyLinkUrl
+map [[ goPrevious
+map ]] goNext
+
+map m Marks.activateCreateMode
+map ` Marks.activateGotoMode
+
+map o Vomnibar.activate
+map O Vomnibar.activateInNewTab
 map a Vomnibar.activateEditUrl
 map A Vomnibar.activateEditUrlInNewTab
+
+map / enterFindMode
+map n performFind
+map N performBackwardsFind
+
+map gt nextTab
+map gT previousTab
+map 1gt firstTab
+map g<tab> visitPreviousTab
+
+map u removeTab
+map <c-r> restoreTab
+map <c-w>T moveTabToNewWindow
+
+" map yt duplicateTab
+" map <a-p> togglePinTab
+" map <a-m> toggleMuteTab
 
 " customized search engine
 gi: https://www.google.com/search?tbm=isch&q=%s Google Images
