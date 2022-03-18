@@ -1,0 +1,18 @@
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+set ideajoin
+set ideamarks
+
+" enable auto-switch feature
+:set keep-english-in-normal
+
+" plugins
+Plug '<extension-github-reference>'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-commentary'
+Plug 'tommcdo/vim-exchange'
+Plug 'machakann/vim-highlightedyank'
+Plug 'kana/vim-textobj-entire'
+packadd matchit
